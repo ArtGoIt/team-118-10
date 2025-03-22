@@ -1,0 +1,95 @@
+/** @format */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #22343d;
+  background-color: #fff;
+}
+
+.container {
+  width: 1130px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.test {
+  padding-bottom: 100px;
+}
+
+.clients {
+  padding: 50px 0;
+}
+
+.clients-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.78;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  text-align: center;
+}
+.clients-text {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 537px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  gap: 64px;
+}
+
+.clients-item {
+  width: calc((100% - 128px) / 3);
+  padding: 28px 26px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+.clients-item-text {
+  margin-bottom: 16px;
+}
+.clients-inner {
+  display: flex;
+  align-items: center;
+}
+.clients-body {
+  margin-left: 14px;
+}
+.clients-item-title {
+}
+.clients-item-desc {
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
