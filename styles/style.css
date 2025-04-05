@@ -35,9 +35,6 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
-.test {
-  padding-bottom: 100px;
-}
 
 .clients {
   padding: 50px 0;
@@ -92,4 +89,74 @@ body {
 img {
   width: 50px;
   height: 50px;
+}
+
+.test {
+  padding: 100px 0;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.burger {
+  appearance: none;
+}
+
+.burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.burger-icon {
+  position: relative;
+}
+
+.burger-icon,
+.burger-icon::after,
+.burger-icon::before {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+}
+
+.burger-icon::after,
+.burger-icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.burger-icon::after {
+  top: -8px;
+}
+
+.burger-icon::before {
+  top: 8px;
+}
+
+.burger-btn:hover .burger-icon::after {
+  top: 10px;
+}
+
+.burger-btn:hover .burger-icon::before {
+  top: -10px;
+}
+
+.burger:checked + .burger-btn .burger-icon {
+  background-color: transparent;
+}
+
+.burger:checked + .burger-btn .burger-icon::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger:checked + .burger-btn .burger-icon::before {
+  top: 0;
+  transform: rotate(-45deg);
 }
